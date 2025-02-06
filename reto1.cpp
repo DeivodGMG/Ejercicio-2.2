@@ -3,14 +3,17 @@ using namespace std;
 /*void Excedio(a){
 
 }*/
-void LaFuncion(int a) {
+void LaFuncion(float a) {
 if (a > 500000){
-    cout << "Inversion de la empresa: $" << a * 0.55 << endl;
-    cout << "Prestamo al Banco: $" << a * 0.30 << endl;
-    cout << "Credito al fabricante $" << a * 0.25 << endl;
-}else
-cout << "Inversion de la empresa: $" << a * 0.70 << endl;
-    cout << "Credito al fabricante $" << a * 0.50 << endl;
+    cout << "- Inversion de la empresa: $" << a * 0.55 << endl;
+    cout << "- Prestamo al Banco: $" << a * 0.30 << endl;
+    cout << "- Credito al fabricante $" << a * 0.25 << endl;
+}else if (a < 500000)
+{
+	cout << "- Inversion de la empresa: $" << a * 0.70 << endl;
+    cout << "- Credito al fabricante $" << a * 0.50 << endl;
+}
+system("pause");
 }
 int main()
 {
